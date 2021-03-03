@@ -117,7 +117,7 @@
             this.buttonJoin.Name = "buttonJoin";
             this.buttonJoin.Size = new System.Drawing.Size(201, 27);
             this.buttonJoin.TabIndex = 9;
-            this.buttonJoin.Text = "Process for Joining";
+            this.buttonJoin.Text = "Process for Restoring";
             this.buttonJoin.UseVisualStyleBackColor = true;
             this.buttonJoin.Click += new System.EventHandler(this.buttonJoin_Click);
             // 

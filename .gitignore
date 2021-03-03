@@ -1,3 +1,5 @@
 LongWavOtoHelper/bin/
 LongWavOtoHelper/obj/
 packages/
+LongWavOtoHelper/publish/
+*.pfx
