@@ -8,9 +8,9 @@ namespace LongWavOtoHelper
     {
         public List<DivisionInfoItem> Items;
 
-        public DivisionInfo(IEnumerable<string> filePahts)
+        public DivisionInfo(IEnumerable<string> filePaths)
         {
-            Items = filePahts.Select(x => DivisionInfoItem.Parse(x)).ToList();
+            Items = filePaths.Select(x => DivisionInfoItem.Parse(x)).ToList();
         }
 
         public List<double> GetPositions()
