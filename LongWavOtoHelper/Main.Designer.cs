@@ -173,6 +173,7 @@
             this.buttonSelectJoiningInputOtoFile.TabIndex = 7;
             this.buttonSelectJoiningInputOtoFile.Text = "…";
             this.buttonSelectJoiningInputOtoFile.UseVisualStyleBackColor = true;
+            this.buttonSelectJoiningInputOtoFile.Click += new System.EventHandler(this.buttonSelectJoiningInputOtoFile_Click);
             // 
             // textBoxJoiningInputOtoFilePath
             // 
@@ -180,6 +181,7 @@
             this.textBoxJoiningInputOtoFilePath.Name = "textBoxJoiningInputOtoFilePath";
             this.textBoxJoiningInputOtoFilePath.Size = new System.Drawing.Size(286, 19);
             this.textBoxJoiningInputOtoFilePath.TabIndex = 6;
+            this.textBoxJoiningInputOtoFilePath.TextChanged += new System.EventHandler(this.textBoxJoiningInputOtoFilePath_TextChanged);
             // 
             // labelJoiningOtoFilePath
             // 

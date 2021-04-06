@@ -56,6 +56,21 @@ namespace LongWavOtoHelper
             }
         }
 
+        private void buttonSelectJoiningInputOtoFile_Click(object sender, EventArgs e)
+        {
+            using (var dialog = new OpenFileDialog())
+            {
+                dialog.RestoreDirectory = true;
+                dialog.Filter = "oto files (*.ini)|*.ini";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    joiningInputOtoFilePath = dialog.FileName;
+                    UpdateViews();
+                }
+            }
+        }
+
         private void textBoxResultFilePath_TextChanged(object sender, EventArgs e)
         {
             wavDirectoryPath = textBoxWavDirectoryPath.Text;
@@ -64,6 +79,11 @@ namespace LongWavOtoHelper
         private void textBoxInputOtoFilePath_TextChanged(object sender, EventArgs e)
         {
             divisionInputOtoFilePath = textBoxDivisionInputOtoFilePath.Text;
+        }
+
+        private void textBoxJoiningInputOtoFilePath_TextChanged(object sender, EventArgs e)
+        {
+            joiningInputOtoFilePath = textBoxJoiningInputOtoFilePath.Text;
         }
 
         private void buttonDivide_Click(object sender, EventArgs e)
